@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <!-- Cache message -->
+  <div id="cacheMessage">
+    This page is using cached product images and styles to speed up loading.
+  </div>
+  
+  <!-- Username -->
+  <input type="text" id="username" placeholder="Enter your name" />
+  <button onclick="saveName()">Save Name</button>
+  <p id="welcome"></p>
+  
+  <!-- Currency Preference -->
+  <select id="currency">
+    <option value="ZAR">ZAR</option>
+    <option value="USD">USD</option>
+  </select>
+  <button id="saveCurrencyBtn">Save Currency</button>
+  
+  <!-- Font Selection -->
+  <label for="fontSelect">Choose Font:</label>
+  <select id="fontSelect">
+    <option value="">Default</option>
+    <option value="Arial, sans-serif">Arial</option>
+    <option value="'Kristen ITC', cursive">Kristen ITC</option>
+    <option value="Verdana, sans-serif">Verdana</option>
+  </select>
+  
+  <!-- Cookie Consent -->
+  <div id="cookie-consent-banner" style="display: none; margin-top: 10px;">
+    <p>
+      We use cookies to improve your experience. By continuing, you accept our
+      <a href="/privacy-policy" target="_blank">Privacy Policy</a>.
+    </p>
+    <button id="accept-cookies">Accept Cookies</button>
+    <button id="decline-cookies">Decline</button>
+  </div>
+  
+  <h1>Product Catalog</h1>
+  <div class="catalog" id="catalog"></div>
+  
+  <h2>Shopping Cart</h2>
+  <div class="cart" id="cart">Your cart is empty.</div>
+  
+  <div class="total" id="total">Total: R 0.00</div>
+  <button onclick="clearCart()">Clear Cart</button>
+
+
+  
+    <script src="script.js"></script>
+  </body>
+</html>
